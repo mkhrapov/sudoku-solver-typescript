@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        //"module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "outFile": "sudoku.js"
+        //"strictNullChecks": true
+    },
+    "files": [
+        "sudoku.ts",
+        "sudoku_util.ts",
+        "SudokuGameUI.ts",
+        "SudokuSolver.ts",
+        "SudokuState.ts"
+    ]
+}

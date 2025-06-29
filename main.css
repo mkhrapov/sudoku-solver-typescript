@@ -1,0 +1,170 @@
+:root {
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color: #cccccc;
+        background: #333333;
+    }
+
+    a {
+        color: yellow;
+    }
+
+    a:visited {
+        color: orange;
+    }
+}
+
+
+/* all */
+@media screen {
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  #main {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #test {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  canvas {
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  
+  #error_message_desktop {
+      color: red;
+      font-size: 150%;
+      font-weight: bold;
+      height: 30px;
+  }
+
+  #error_message_mobile {
+      color: red;
+      font-weight: bold;
+      font-size: 100%;
+      height: 20px;
+  }
+  
+  p {
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  
+  #clear_button {
+      float: left;
+      width: 30%;
+  }
+  
+  #solve_button {
+      float: right;
+      width: 30%;
+  }
+  
+  #buttons {
+      position: relative;
+  }
+
+  #modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  #modal_keyboard {
+    width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 150px;
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #modal_keyboard table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #numeric_buttons td {
+    width: 33%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #function_buttons td {
+    width: 50%;
+  }
+
+  #modal #numeric_buttons button {
+      padding: 10px 30px 10px 30px;
+  }
+
+  #modal #function_buttons button {
+      padding: 10px 30px 10px 30px;
+  }
+  
+  .left {
+      text-align: left;
+      padding-left: 15px;
+  }
+
+  .right {
+      text-align: right;
+      padding-right: 15px;
+  }
+}
+
+/* phone */
+@media screen and (min-width: 0px) and (max-width: 449px) {
+  #main {
+    width: 315px;
+  }
+
+  #test {
+    width: 315px;
+  }
+
+  canvas {
+    width: 315px;
+    height: 315px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+}
+
+/* tablet and larger */
+@media screen and (min-width: 450px) {
+  #main {
+    width: 450px;
+  }
+
+  #test {
+    width: 450px;
+  }
+
+  canvas {
+    width: 450px;
+    height: 450px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+}
